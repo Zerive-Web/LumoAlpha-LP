@@ -329,22 +329,38 @@
   <div class="container">
     <p class="eyebrow">WHY LUMOALPHA</p>
     <h2 class="sec-title center">LumoAlphaが選ばれる理由</h2>
-    <p class="sec-lead center">毎日の管理を整え、次にやるべきことを分かりやすく。</p>
+    <p class="sec-lead center">今日のタスク、予約と案件、顧客情報、チームの共有。入口を増やしても、管理はひとつにまとまります。</p>
 
     <div class="reason-tabs" data-reason-tabs>
       <div class="reason-tabs__nav-wrap is-scroll-start is-scroll-end">
         <div class="reason-tabs__nav" role="tablist" aria-label="選ばれる理由">
           <button type="button" class="reason-tabs__tab is-active" role="tab" id="reason-tab-today" aria-selected="true" aria-controls="reason-pane-today" data-tab="today">
-            <span class="reason-tabs__tab-num">01</span>
-            <span class="reason-tabs__tab-label">今日やること</span>
+            <span class="reason-tabs__tab-icon" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span>
+            <span class="reason-tabs__tab-text">
+              <span class="reason-tabs__tab-num">01</span>
+              <span class="reason-tabs__tab-label">今日のタスクが自動で整理される</span>
+            </span>
           </button>
           <button type="button" class="reason-tabs__tab" role="tab" id="reason-tab-flow" aria-selected="false" aria-controls="reason-pane-flow" data-tab="flow" tabindex="-1">
-            <span class="reason-tabs__tab-num">02</span>
-            <span class="reason-tabs__tab-label">予約・作業管理</span>
+            <span class="reason-tabs__tab-icon" aria-hidden="true"><svg><use href="#icon-inbox"></use></svg></span>
+            <span class="reason-tabs__tab-text">
+              <span class="reason-tabs__tab-num">02</span>
+              <span class="reason-tabs__tab-label">予約・案件をまとめて管理できる</span>
+            </span>
           </button>
           <button type="button" class="reason-tabs__tab" role="tab" id="reason-tab-customer" aria-selected="false" aria-controls="reason-pane-customer" data-tab="customer" tabindex="-1">
-            <span class="reason-tabs__tab-num">03</span>
-            <span class="reason-tabs__tab-label">顧客管理・リピート</span>
+            <span class="reason-tabs__tab-icon" aria-hidden="true"><svg><use href="#icon-repeat"></use></svg></span>
+            <span class="reason-tabs__tab-text">
+              <span class="reason-tabs__tab-num">03</span>
+              <span class="reason-tabs__tab-label">顧客情報を、次の依頼につなげられる</span>
+            </span>
+          </button>
+          <button type="button" class="reason-tabs__tab" role="tab" id="reason-tab-team" aria-selected="false" aria-controls="reason-pane-team" data-tab="team" tabindex="-1">
+            <span class="reason-tabs__tab-icon" aria-hidden="true"><svg><use href="#icon-users"></use></svg></span>
+            <span class="reason-tabs__tab-text">
+              <span class="reason-tabs__tab-num">04</span>
+              <span class="reason-tabs__tab-label">チームで共有し、誰か一人に依存しない</span>
+            </span>
           </button>
         </div>
         <span class="reason-tabs__scroll-hint" aria-hidden="true">
@@ -357,12 +373,12 @@
           <article class="reason-tabs__pane is-active" id="reason-pane-today" role="tabpanel" aria-labelledby="reason-tab-today" data-reason-pane="today" tabindex="0">
             <div class="reason-tabs__copy">
               <p class="reason-tabs__kicker">ホーム画面</p>
-              <h3 class="reason-tabs__title">次に対応すべきことを、ひと目で。</h3>
-              <p class="reason-tabs__desc">予約リクエストの期限、担当者が決まっていない案件、見積もりの回答期限、今日の作業。対応が必要なことがホーム画面に並ぶので、いくつもの画面を探し回る必要がありません。</p>
+              <h3 class="reason-tabs__title">今日のタスクが自動で整理される</h3>
+              <p class="reason-tabs__desc">対応が必要な予約や作業は、期限や状況に応じてホームに自動で整理されます。見積もりを使う場合は、その期限も同じ画面にまとまり、何から手をつけるかが見えるので、確認漏れや対応忘れを減らし、毎日の管理の手間を軽くできます。</p>
               <ul class="reason-tabs__points">
-                <li>期限が近いものから確認できる</li>
-                <li>担当未割当の案件に気づける</li>
-                <li>ブラウザ通知でもお知らせ（任意で設定）</li>
+                <li>期限が近い予約や見積もりが、ホームに並ぶ</li>
+                <li>今日の作業を、時間順に確認できる</li>
+                <li>期限切れの件数が分かり、漏れに気づきやすい</li>
               </ul>
             </div>
             <div class="reason-tabs__visual">
@@ -378,19 +394,19 @@
                             <ul class="mk__nav"><li class="is-on">ホーム</li><li>カレンダー</li><li>作業管理</li><li>予約管理</li><li>顧客管理</li><li>リピート予定</li></ul>
                           </aside>
                           <div class="mk__main">
-                            <div class="mk__top"><p class="mk__h">ホーム</p><span class="mk__sub">今日やること</span></div>
+                            <div class="mk__top"><p class="mk__h">ホーム</p><span class="mk__sub">今日のタスク</span></div>
                             <div class="mk__stats">
-                              <div class="mk__stat"><b>2</b><span>予約リクエスト</span></div>
-                              <div class="mk__stat"><b>1</b><span>担当未割当</span></div>
+                              <div class="mk__stat"><b>2</b><span>今日のタスク</span></div>
+                              <div class="mk__stat"><b>1</b><span>予約リクエスト</span></div>
                               <div class="mk__stat mk__stat--warn"><b>1</b><span>本日期限</span></div>
                             </div>
                             <div class="mk__cols">
                               <div class="mk__panel">
-                                <p class="mk__panel-h">今日やること</p>
+                                <p class="mk__panel-h">今日のタスク</p>
                                 <ul class="mk__list">
-                                  <li class="mk__row"><span class="mk-tag mk-tag--warn">本日期限</span><span class="mk__row-main"><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もりの回答 · 17:00まで</span></span></li>
-                                  <li class="mk__row"><span class="mk-tag">予約リクエスト</span><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン清掃 · 明日まで</span></span></li>
-                                  <li class="mk__row"><span class="mk-tag mk-tag--muted">担当未割当</span><span class="mk__row-main"><span class="mk__row-t">伊藤様</span><span class="mk__row-s">浴室清掃 · 明日 13:00</span></span></li>
+                                  <li class="mk__row"><span class="mk-tag mk-tag--warn">本日期限</span><span class="mk__row-main"><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もりの回答 · 今日</span></span></li>
+                                  <li class="mk__row"><span class="mk-tag">予約リクエスト</span><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン清掃 · 期限が近い</span></span></li>
+                                  <li class="mk__row"><span class="mk-tag mk-tag--muted">今日の作業</span><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">キッチン清掃 · 10:00</span></span></li>
                                 </ul>
                               </div>
                               <div class="mk__panel">
@@ -416,11 +432,11 @@
                       <div class="dev-screen dev-screen--phone">
                         <div class="mk mk--phone" aria-hidden="true">
                           <div class="mk__top"><p class="mk__h">ホーム</p></div>
-                          <p class="mk__panel-h">今日やること</p>
+                          <p class="mk__panel-h">今日のタスク</p>
                           <ul class="mk__list">
-                            <li class="mk__card"><span class="mk-tag mk-tag--warn">本日期限</span><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もりの回答 · 17:00まで</span></li>
-                            <li class="mk__card"><span class="mk-tag">予約リクエスト</span><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン清掃 · 明日まで</span></li>
-                            <li class="mk__card"><span class="mk-tag mk-tag--muted">担当未割当</span><span class="mk__row-t">伊藤様</span><span class="mk__row-s">浴室清掃 · 明日 13:00</span></li>
+                            <li class="mk__card"><span class="mk-tag mk-tag--warn">本日期限</span><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もりの回答 · 今日</span></li>
+                            <li class="mk__card"><span class="mk-tag">予約リクエスト</span><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン清掃 · 期限が近い</span></li>
+                            <li class="mk__card"><span class="mk-tag mk-tag--muted">今日の作業</span><span class="mk__row-t">山田様</span><span class="mk__row-s">キッチン清掃 · 10:00</span></li>
                           </ul>
                           <nav class="mk__tabbar"><span class="is-on">ホーム</span><span>予定</span><span>作業</span><span>予約</span><span>顧客</span></nav>
                         </div>
@@ -435,12 +451,12 @@
           <article class="reason-tabs__pane" id="reason-pane-flow" role="tabpanel" aria-labelledby="reason-tab-flow" data-reason-pane="flow" tabindex="0" aria-hidden="true" inert>
             <div class="reason-tabs__copy">
               <p class="reason-tabs__kicker">予約管理・作業管理</p>
-              <h3 class="reason-tabs__title">予約の確認から作業完了まで、<br class="only-desktop">ひとつの流れで。</h3>
-              <p class="reason-tabs__desc">どの入口から入った仕事も、同じ予約一覧で管理。確認・見積もり・予約確定・作業・支払いと、案件がいまどの段階にあるかが分かります。</p>
+              <h3 class="reason-tabs__title">予約・案件をまとめて管理できる</h3>
+              <p class="reason-tabs__desc">Web予約も、電話で受けて登録した予約も、同じ一覧に入ります。確認から作業、支払いまで段階が見えるので、入口が増えても案件の状況はひとつで追えます。</p>
               <ul class="reason-tabs__points">
-                <li>入口（電話・紹介など）を記録して一覧で管理</li>
-                <li>担当者と作業日時をスマートフォンでも確認</li>
-                <li>作業完了後は支払い状況を記録</li>
+                <li>Webと電話の予約を、同じ一覧で管理</li>
+                <li>担当・日時・いまの段階を、その場で確認</li>
+                <li>作業の進み具合と支払いを記録できる</li>
               </ul>
             </div>
             <div class="reason-tabs__visual">
@@ -459,14 +475,13 @@
                             <div class="mk__top"><p class="mk__h">予約管理</p><span class="mk__chips"><span class="is-on">すべて</span><span>確認待ち</span><span>確定</span></span></div>
                             <div class="mk__table">
                               <div class="mk__tr mk__tr--head"><span>お客様</span><span>サービス</span><span>入口</span><span>日時</span><span>状況</span></div>
-                              <div class="mk__tr"><span>高橋様</span><span>エアコン清掃</span><span>予約サイト</span><span>明日 10:00</span><span><i class="mk-tag mk-tag--warn">確認待ち</i></span></div>
-                              <div class="mk__tr"><span>伊藤様</span><span>浴室清掃</span><span>電話</span><span>明日 13:00</span><span><i class="mk-tag mk-tag--muted">担当未割当</i></span></div>
-                              <div class="mk__tr"><span>中村様</span><span>ハウスクリーニング</span><span>紹介</span><span>調整中</span><span><i class="mk-tag">見積もり</i></span></div>
-                              <div class="mk__tr is-sel"><span>山田様</span><span>キッチン清掃</span><span>自社サイト</span><span>今日 10:00</span><span><i class="mk-tag">作業中</i></span></div>
-                              <div class="mk__tr"><span>小林様</span><span>エアコン清掃</span><span>LINE</span><span>今日 14:00</span><span><i class="mk-tag mk-tag--ok">予約確定</i></span></div>
+                              <div class="mk__tr"><span>高橋様</span><span>エアコン清掃</span><span>Web</span><span>明日 10:00</span><span><i class="mk-tag mk-tag--warn">リクエスト</i></span></div>
+                              <div class="mk__tr"><span>伊藤様</span><span>浴室清掃</span><span>電話</span><span>明日 13:00</span><span><i class="mk-tag mk-tag--muted">担当者確認待ち</i></span></div>
+                              <div class="mk__tr is-sel"><span>山田様</span><span>キッチン清掃</span><span>Web</span><span>今日 10:00</span><span><i class="mk-tag">作業中</i></span></div>
+                              <div class="mk__tr"><span>小林様</span><span>エアコン清掃</span><span>電話</span><span>今日 14:00</span><span><i class="mk-tag mk-tag--ok">予約確定</i></span></div>
                             </div>
                             <div class="mk__phase" aria-label="山田様の案件の進み具合">
-                              <span class="is-done">受付</span><span class="is-done">確認</span><span class="is-done">見積もり</span><span class="is-done">予約確定</span><span class="is-now">作業</span><span>支払い</span><span>フォロー</span>
+                              <span class="is-done">受付</span><span class="is-done">確認</span><span class="is-done">予約確定</span><span class="is-now">作業</span><span>支払い</span>
                             </div>
                           </div>
                         </div>
@@ -507,12 +522,12 @@
           <article class="reason-tabs__pane" id="reason-pane-customer" role="tabpanel" aria-labelledby="reason-tab-customer" data-reason-pane="customer" tabindex="0" aria-hidden="true" inert>
             <div class="reason-tabs__copy">
               <p class="reason-tabs__kicker">顧客管理・リピート予定</p>
-              <h3 class="reason-tabs__title">過去の仕事を、次のご依頼につなげる。</h3>
-              <p class="reason-tabs__desc">顧客ごとの予約経路、作業内容、訪問日、注意点をまとめて管理。過去の対応をすぐに確認でき、条件に応じて自動で作られるフォロー候補をもとに、作業後の連絡やリピート営業につなげられます。</p>
+              <h3 class="reason-tabs__title">顧客情報を、次の依頼につなげられる</h3>
+              <p class="reason-tabs__desc">利用回数、過去の作業、受付元、担当、メモを顧客ごとに残せます。作業完了時に周期を記録すると次回の推奨日ができ、声かけの状況まで管理できるので、作業後のフォローやリピートにつなげられます。</p>
               <ul class="reason-tabs__points">
-                <li>利用回数・前回の作業内容を確認</li>
-                <li>次回推奨日と声かけの状況を管理</li>
-                <li>メモをスタッフ間で共有</li>
+                <li>過去の作業内容と担当を、すぐに確認できる</li>
+                <li>注意点はメモに残り、次の訪問で使える</li>
+                <li>次回推奨日と声かけ状況で、フォローできる</li>
               </ul>
             </div>
             <div class="reason-tabs__visual">
@@ -532,16 +547,16 @@
                             <div class="mk__stats">
                               <div class="mk__stat"><b>5回</b><span>利用回数</span></div>
                               <div class="mk__stat"><b>2025/03/12</b><span>最終利用</span></div>
-                              <div class="mk__stat"><b>紹介</b><span>直近の受付元</span></div>
+                              <div class="mk__stat"><b>山本</b><span>直近の担当</span></div>
                             </div>
                             <div class="mk__cols mk__cols--customer">
                               <div class="mk__panel">
-                                <p class="mk__panel-h">予約・作業の履歴</p>
+                                <p class="mk__panel-h">利用履歴</p>
                                 <div class="mk__table mk__table--customer">
-                                  <div class="mk__tr mk__tr--head"><span>訪問日</span><span>作業内容</span><span>受付元</span><span>担当</span></div>
-                                  <div class="mk__tr"><span>2025/03/12</span><span>エアコン清掃（2台）</span><span>紹介</span><span>山本</span></div>
-                                  <div class="mk__tr"><span>2024/11/08</span><span>キッチン清掃</span><span>Web</span><span>佐々木</span></div>
-                                  <div class="mk__tr"><span>2024/05/20</span><span>エアコン清掃（2台）</span><span>電話</span><span>山本</span></div>
+                                  <div class="mk__tr mk__tr--head"><span>訪問日</span><span>作業内容</span><span>担当</span><span>メモ</span></div>
+                                  <div class="mk__tr"><span>3/12</span><span>エアコン</span><span>山本</span><span>午前希望</span></div>
+                                  <div class="mk__tr"><span>11/8</span><span>キッチン</span><span>佐々木</span><span>駐車場</span></div>
+                                  <div class="mk__tr"><span>5/20</span><span>エアコン</span><span>山本</span><span>午前希望</span></div>
                                 </div>
                               </div>
                               <div class="mk__panel">
@@ -596,6 +611,85 @@
                             </li>
                           </ul>
                           <nav class="mk__tabbar"><span>ホーム</span><span>予定</span><span>作業</span><span>予約</span><span>顧客</span></nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reason-tabs__pane" id="reason-pane-team" role="tabpanel" aria-labelledby="reason-tab-team" data-reason-pane="team" tabindex="0" aria-hidden="true" inert>
+            <div class="reason-tabs__copy">
+              <p class="reason-tabs__kicker">カレンダー・チーム</p>
+              <h3 class="reason-tabs__title">チームで共有し、誰か一人に依存しない</h3>
+              <p class="reason-tabs__desc">予定、予約、作業、顧客の履歴や注意点を、チームの画面に残せます。担当が変わっても必要な情報を確認できるので、特定の人の記憶に頼らず仕事を回せます。</p>
+              <ul class="reason-tabs__points">
+                <li>管理者と事務は、チームの予定をカレンダーで確認できる</li>
+                <li>予約の確定と作業登録は事務以上、進捗と完了は担当者が記録できる</li>
+                <li>履歴とメモが残るので、担当が代わっても引き継げる</li>
+              </ul>
+            </div>
+            <div class="reason-tabs__visual">
+              <div class="dev-set dev-set--tab">
+                <div class="dev-set__pc">
+                  <div class="dev-monitor">
+                    <div class="dev-monitor__frame">
+                      <span class="dev-monitor__cam"></span>
+                      <div class="dev-screen dev-screen--pc">
+                        <div class="mk mk--pc" aria-hidden="true">
+                          <aside class="mk__side">
+                            <span class="mk__logo"><i></i>LumoAlpha</span>
+                            <ul class="mk__nav"><li>ホーム</li><li class="is-on">カレンダー</li><li>作業管理</li><li>予約管理</li><li>顧客管理</li><li>リピート予定</li></ul>
+                          </aside>
+                          <div class="mk__main">
+                            <div class="mk__top"><p class="mk__h">カレンダー</p><span class="mk__sub">今週の予定</span></div>
+                            <div class="mk__cols mk__cols--customer">
+                              <div class="mk__panel">
+                                <p class="mk__panel-h">チームの予定</p>
+                                <ul class="mk__list">
+                                  <li class="mk__row mk__row--time"><span class="mk__time">10:00</span><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">キッチン清掃 · 山本</span></span></li>
+                                  <li class="mk__row mk__row--time"><span class="mk__time">14:00</span><span class="mk__row-main"><span class="mk__row-t">小林様</span><span class="mk__row-s">エアコン清掃 · 佐々木</span></span></li>
+                                  <li class="mk__row mk__row--time"><span class="mk__time">明日</span><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">Web予約 · 事務が確認</span></span></li>
+                                </ul>
+                              </div>
+                              <div class="mk__panel">
+                                <p class="mk__panel-h">山田様の引き継ぎ</p>
+                                <p class="mk__memo">午前希望。駐車場あり。前回担当は山本。利用は5回。</p>
+                                <p class="mk__panel-h">分担</p>
+                                <ul class="mk__list">
+                                  <li class="mk__row"><span class="mk-tag">事務</span><span class="mk__row-main"><span class="mk__row-t">予約の確定・作業登録</span></span></li>
+                                  <li class="mk__row"><span class="mk-tag mk-tag--ok">担当</span><span class="mk__row-main"><span class="mk__row-t">進捗と完了を記録</span></span></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="dev-monitor__neck"></span>
+                    <span class="dev-monitor__base"></span>
+                  </div>
+                </div>
+                <div class="dev-set__phone">
+                  <div class="dev-phone">
+                    <div class="dev-phone__frame">
+                      <span class="dev-phone__island"></span>
+                      <div class="dev-screen dev-screen--phone">
+                        <div class="mk mk--phone" aria-hidden="true">
+                          <div class="mk__top"><p class="mk__h">山田様</p><span class="mk__sub">作業詳細</span></div>
+                          <div class="mk__detail">
+                            <p class="mk__detail-name">キッチン清掃</p>
+                            <dl>
+                              <div><dt>日時</dt><dd>今日 10:00</dd></div>
+                              <div><dt>担当</dt><dd>山本</dd></div>
+                              <div><dt>メモ</dt><dd>駐車場あり</dd></div>
+                              <div><dt>前回</dt><dd>山本 · 5回目</dd></div>
+                            </dl>
+                          </div>
+                          <span class="mk__btn">作業完了を記録</span>
+                          <nav class="mk__tabbar"><span>ホーム</span><span class="is-on">予定</span><span>作業</span><span>予約</span><span>顧客</span></nav>
                         </div>
                       </div>
                     </div>
