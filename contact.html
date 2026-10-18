@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ | LumoAlpha</title>
+<meta name="description" content="LumoAlphaへのお問い合わせはこちらから。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="icon" href="/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body class="contact-page">
+
+<header class="site-nav is-light">
+  <a class="site-nav__brand" href="index.html">
+    <img src="/icons/icon-192.png" alt="" class="site-nav__icon" width="36" height="36">
+    <span>LumoAlpha</span>
+  </a>
+  <a class="site-nav__cta site-nav__cta--ghost" href="index.html">サイトに戻る</a>
+</header>
+
+<main class="contact-main">
+  <section class="contact-hero">
+    <div class="container container--narrow">
+      <p class="eyebrow">CONTACT</p>
+      <h1 class="contact-hero__title" id="contactHeroTitle">お問い合わせ</h1>
+      <p class="contact-hero__lead" id="contactHeroLead">導入のご相談、料金のご質問、使い方のサポートなど、お気軽にご連絡ください。<br>メール・LINE・Zoomでのご案内も可能です。</p>
+      <p class="contact-hero__note" id="contactHeroNote">※ このページは仮のフォームです。現在は実際の送信機能を実装しておらず、送信内容はどこにも送られません。正式版は今後ご用意いたします。</p>
+    </div>
+  </section>
+
+  <section class="contact-form-sec">
+    <div class="container container--narrow">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="contact-form__row">
+          <label class="contact-form__field">
+            <span>会社名 <em>必須</em></span>
+            <input type="text" name="club" placeholder="例）山田クリーニング" required>
+          </label>
+          <label class="contact-form__field">
+            <span>お名前 <em>必須</em></span>
+            <input type="text" name="name" placeholder="例）山口 太郎" required>
+          </label>
+        </div>
+        <div class="contact-form__row">
+          <label class="contact-form__field">
+            <span>メールアドレス <em>必須</em></span>
+            <input type="email" name="email" placeholder="example@lumoalpha.jp" required>
+          </label>
+          <label class="contact-form__field">
+            <span>電話番号 <small>任意</small></span>
+            <input type="tel" name="tel" placeholder="090-0000-0000">
+          </label>
+        </div>
+        <label class="contact-form__field">
+          <span>スタッフ数の目安 <small>任意</small></span>
+          <select name="students">
+            <option value="">選択してください</option>
+            <option value="1-10">1〜10人</option>
+            <option value="11-30">11〜30人</option>
+            <option value="31-50">31〜50人</option>
+            <option value="51-100">51〜100人</option>
+            <option value="100+">100人以上</option>
+          </select>
+        </label>
+        <label class="contact-form__field">
+          <span>ご希望の連絡方法 <small>任意</small></span>
+          <select name="channel" id="contactChannel">
+            <option value="">選択してください</option>
+            <option value="mail">メール</option>
+            <option value="line">LINE</option>
+            <option value="zoom">Zoom（オンライン）</option>
+          </select>
+        </label>
+        <label class="contact-form__field">
+          <span>ご希望の日時 <small>任意</small></span>
+          <input type="text" name="preferred_time" id="contactPreferredTime" placeholder="例）4/20（月）14:00〜、平日の午前中など">
+        </label>
+        <label class="contact-form__field">
+          <span>お問い合わせ内容 <em>必須</em></span>
+          <textarea name="message" id="contactMessage" rows="6" placeholder="導入時期や、気になる機能などをご記入ください" required></textarea>
+        </label>
+
+        <button type="submit" class="contact-form__submit" id="contactSubmitBtn">送信する</button>
+        <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 LumoAlpha</p>
+</footer>
+
+<script src="js/contact.js"></script>
+</body>
+</html>
