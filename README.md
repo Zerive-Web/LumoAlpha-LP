@@ -12,19 +12,13 @@ https://lumoalpha.jp/lp で公開しているランディングページのソ�
 ## ローカル確認
 
 ```bash
-cd public   # LumoAlpha 開発リポジトリ側
-python3 -m http.server 8777
-# http://127.0.0.1:8777/lp/index.html
-```
-
-またはこのフォルダ単体:
-
-```bash
 python3 -m http.server 8778
 # http://127.0.0.1:8778/index.html
 ```
 
+アプリ経由: `LumoAlpha-開発/public` で `python3 -m http.server 8777` → `/lp/index.html`
+
 ## 本番反映の流れ
 
-1. このリポジトリで変更 → commit → `git push origin main`
-2. LumoAlpha 開発リポジトリでサブモジュールの参照を更新 → push（Vercel デプロイ）
+1. このリポジトリ（`~/Desktop/LumoAlpha-LP`）で変更 → push `main`
+2. `~/Desktop/LumoAlpha-開発` で `public/lp` サブモジュールを更新 → push（Vercel）

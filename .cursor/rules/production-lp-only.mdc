@@ -6,6 +6,6 @@ alwaysApply: true
 # LumoAlpha LP（本番リポジトリ）
 
 - **編集対象:** このリポジトリ内の LP ファイルのみ（HTML / CSS / JS / images）。
-- **編集しない:** `~/Desktop/lumoalpha` の `src/`、`prisma/`、API、認証、DB、アプリ画面。
-- **横断編集しない:** `public/lp` を開発リポジトリ側で直接直さない。LP の修正はここで commit → push し、開発リポジトリではサブモジュールの更新のみ。
+- **編集しない:** `LumoAlpha-開発` / `LumoAlpha-URL` / `LumoAlpha-本番` の `src/`、`prisma/`、API、認証、DB、アプリ画面、マーケページ。
+- **横断編集しない:** 他フォルダの `public/lp` を直接直さない。LP はここで push → `LumoAlpha-開発` でサブモジュール SHA 更新。
 - 実在しない機能・自動連携・未提供サポートを LP に書かない。料金は LP 内の料金セクションと一致させる。
