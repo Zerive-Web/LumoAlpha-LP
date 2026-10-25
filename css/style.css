@@ -389,6 +389,23 @@ h1,h2,h3,p{ margin:0; }
   transition: background .25s var(--ease), transform .25s var(--ease);
 }
 .site-nav__cta:hover{ background: var(--navy-soft); }
+.brand-logo{
+  position:relative; display:inline-block;
+  padding-bottom:.34em;
+  font-weight:700; letter-spacing:-.015em; line-height:1;
+  color:#0b2059;
+}
+.brand-logo__word{ white-space:nowrap; }
+.brand-logo__a{
+  display:inline-block; height:.727em; width:auto; aspect-ratio:96 / 100;
+  margin:0 .01em 0 .02em; vertical-align:baseline;
+  fill:currentColor; overflow:visible;
+}
+.brand-logo__a-left{ fill:#58a3f1; }
+.brand-logo__swoosh{
+  position:absolute; left:10%; width:64%; bottom:0; height:.36em;
+  overflow:visible;
+}
 .site-nav:not(.is-light) .site-nav__brand{ color:#fff; }
 .site-nav:not(.is-light) .site-nav__cta{
   background: #fff;
