@@ -33,7 +33,7 @@ h1, h2, h3, .sec-title, .hero__tagline, .hero__sub, .pain__resolve, .pain__card-
 .sec-lead.center{ text-align:center; text-wrap:balance; }
 
 /* ---------- Header (always light: every section uses a light background) ---------- */
-.site-nav .site-nav__brand{ background:rgba(255,255,255,.9); border-color:var(--line-light); color:var(--ink); }
+.site-nav .site-nav__brand{ color:var(--navy); }
 .site-nav .site-nav__cta{ background:var(--btn-bg); color:#fff; box-shadow:var(--btn-shadow); }
 .site-nav .site-nav__cta:hover{ background:var(--navy-soft); }
 
