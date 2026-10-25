@@ -393,7 +393,7 @@ h1,h2,h3,p{ margin:0; }
   display:block;
   width:auto;
   height:40px;
-  max-width:min(168px, 46vw);
+  max-width:min(206px, 48vw);
   object-fit:contain;
 }
 .site-nav:not(.is-light) .site-nav__brand{ color:#fff; }
@@ -1878,7 +1878,7 @@ h1,h2,h3,p{ margin:0; }
   .site-nav{ top:10px; left:10px; right:10px; }
   .site-nav__cta{ padding:10px 16px; font-size:12px; min-height:40px; }
   .site-nav__brand{ padding:6px 2px; }
-  .brand-logo__img{ height:34px; max-width:min(148px, 52vw); }
+  .brand-logo__img{ height:34px; max-width:min(178px, 54vw); }
 }
 @media (max-width: 400px){
   .device-phone-pair{
