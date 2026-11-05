@@ -392,9 +392,10 @@ h1,h2,h3,p{ margin:0; }
 .brand-logo__img{
   display:block;
   width:auto;
-  height:42px;
-  max-width:min(194px, 52vw);
+  height:46px;
+  max-width:min(221px, 54vw);
   object-fit:contain;
+  filter: drop-shadow(0 2px 8px rgba(30,120,220,.28));
 }
 .site-nav:not(.is-light) .site-nav__brand{ color:#fff; }
 .site-nav:not(.is-light) .site-nav__cta{
@@ -1886,7 +1887,7 @@ h1,h2,h3,p{ margin:0; }
   .site-nav{ top:10px; left:10px; right:10px; }
   .site-nav__cta{ padding:10px 16px; font-size:12px; min-height:40px; }
   .site-nav__brand{ padding:6px 2px; }
-  .brand-logo__img{ height:36px; max-width:min(168px, 56vw); }
+  .brand-logo__img{ height:38px; max-width:min(186px, 58vw); }
 }
 @media (max-width: 400px){
   .device-phone-pair{
