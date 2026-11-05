@@ -202,8 +202,14 @@ h1, h2, h3, .sec-title, .hero__tagline, .hero__sub, .pain__resolve, .pain__card-
   background:#fff;
   border-right:1px solid rgba(23,43,66,.07);
 }
-.mk__logo{ display:flex; align-items:center; gap:.5em; font-family:var(--ff-en); font-weight:800; font-size:1.02em; color:var(--navy); white-space:nowrap; }
-.mk__logo i{ width:1.5em; height:1.5em; border-radius:.45em; background:var(--ds-gradient-accent); flex-shrink:0; }
+.mk__logo{ display:flex; align-items:center; min-width:0; }
+.mk__logo__img{
+  display:block;
+  width:auto;
+  height:1.35em;
+  max-width:100%;
+  object-fit:contain;
+}
 .mk__nav{ display:flex; flex-direction:column; gap:.25em; }
 .mk__nav li{ padding:.55em .75em; border-radius:.55em; font-weight:600; color:var(--ink-soft); white-space:nowrap; }
 .mk__nav li.is-on{ background:rgba(49,93,145,.1); color:var(--btn-bg); }
