@@ -96,23 +96,198 @@
     <article>
       <p class="n">01</p>
       <h2>HPから予約受付</h2>
-      <p>公式サイト・LPの予約ボタンから専用フォームへ。サービス・希望日・お客様情報を入力すると、顧客・予約・作業予定がまとめて登録されます。</p>
+      <p>Web予約はホームに届き、今日のタスクとして並びます。</p>
+      <div class="dev-set dev-set--tab flyer-dev flyer-dev--sm" aria-hidden="true">
+        <div class="dev-set__pc">
+          <div class="dev-monitor">
+            <div class="dev-monitor__frame">
+              <span class="dev-monitor__cam"></span>
+              <div class="dev-screen dev-screen--pc">
+                <div class="mk mk--pc">
+                  <aside class="mk__side">
+                    <span class="mk__logo"><img class="mk__logo__img" src="../images/brand-lumoalpha-wordmark.png" alt=""></span>
+                    <ul class="mk__nav"><li class="is-on">ホーム</li><li>カレンダー</li><li>作業管理</li><li>予約管理</li><li>顧客管理</li><li>リピート予定</li></ul>
+                  </aside>
+                  <div class="mk__main">
+                    <div class="mk__top"><p class="mk__h">ホーム</p><span class="mk__sub">今日のタスク</span></div>
+                    <div class="mk__stats">
+                      <div class="mk__stat"><b>2</b><span>今日のタスク</span></div>
+                      <div class="mk__stat"><b>1</b><span>予約リクエスト</span></div>
+                      <div class="mk__stat mk__stat--warn"><b>1</b><span>本日期限</span></div>
+                    </div>
+                    <div class="mk__cols">
+                      <div class="mk__panel">
+                        <p class="mk__panel-h">今日のタスク</p>
+                        <ul class="mk__list">
+                          <li class="mk__row"><span class="mk-tag">予約リクエスト</span><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン清掃 · Web</span></span></li>
+                          <li class="mk__row"><span class="mk-tag mk-tag--warn">本日期限</span><span class="mk__row-main"><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もりの回答 · 今日</span></span></li>
+                        </ul>
+                      </div>
+                      <div class="mk__panel">
+                        <p class="mk__panel-h">今日の作業</p>
+                        <ul class="mk__list">
+                          <li class="mk__row mk__row--time"><span class="mk__time">10:00</span><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">キッチン清掃</span></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="dev-monitor__neck"></span>
+            <span class="dev-monitor__base"></span>
+          </div>
+        </div>
+        <div class="dev-set__phone">
+          <div class="dev-phone">
+            <div class="dev-phone__frame">
+              <span class="dev-phone__island"></span>
+              <div class="dev-screen dev-screen--phone">
+                <div class="mk mk--phone">
+                  <div class="mk__top"><p class="mk__h">ホーム</p></div>
+                  <p class="mk__panel-h">今日のタスク</p>
+                  <ul class="mk__list">
+                    <li class="mk__card"><span class="mk-tag">予約リクエスト</span><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン清掃 · Web</span></li>
+                    <li class="mk__card"><span class="mk-tag mk-tag--warn">本日期限</span><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もりの回答 · 今日</span></li>
+                  </ul>
+                  <nav class="mk__tabbar"><span class="is-on">ホーム</span><span>予定</span><span>作業</span><span>予約</span><span>顧客</span></nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
     <article>
       <p class="n">02</p>
       <h2>受付・担当・作業</h2>
-      <p>新しいWeb予約を一覧で確認し、担当者を割り当てて確定。カレンダーと作業詳細で日程・進行を追い、完了まで同じ画面で管理します。</p>
+      <p>予約一覧で確認し、担当を割り当てて作業完了まで追います。</p>
+      <div class="dev-set dev-set--tab flyer-dev flyer-dev--sm" aria-hidden="true">
+        <div class="dev-set__pc">
+          <div class="dev-monitor">
+            <div class="dev-monitor__frame">
+              <span class="dev-monitor__cam"></span>
+              <div class="dev-screen dev-screen--pc">
+                <div class="mk mk--pc">
+                  <aside class="mk__side">
+                    <span class="mk__logo"><img class="mk__logo__img" src="../images/brand-lumoalpha-wordmark.png" alt=""></span>
+                    <ul class="mk__nav"><li>ホーム</li><li>カレンダー</li><li>作業管理</li><li class="is-on">予約管理</li><li>顧客管理</li><li>リピート予定</li></ul>
+                  </aside>
+                  <div class="mk__main">
+                    <div class="mk__top"><p class="mk__h">予約管理</p><span class="mk__chips"><span class="is-on">すべて</span><span>確認待ち</span><span>確定</span></span></div>
+                    <div class="mk__table">
+                      <div class="mk__tr mk__tr--head"><span>お客様</span><span>サービス</span><span>入口</span><span>日時</span><span>状況</span></div>
+                      <div class="mk__tr"><span>高橋様</span><span>エアコン清掃</span><span>Web</span><span>明日 10:00</span><span><i class="mk-tag mk-tag--warn">リクエスト</i></span></div>
+                      <div class="mk__tr is-sel"><span>山田様</span><span>キッチン清掃</span><span>Web</span><span>今日 10:00</span><span><i class="mk-tag">作業中</i></span></div>
+                      <div class="mk__tr"><span>小林様</span><span>エアコン清掃</span><span>電話</span><span>今日 14:00</span><span><i class="mk-tag mk-tag--ok">予約確定</i></span></div>
+                    </div>
+                    <div class="mk__phase"><span class="is-done">受付</span><span class="is-done">確認</span><span class="is-now">作業</span><span>売上</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="dev-monitor__neck"></span>
+            <span class="dev-monitor__base"></span>
+          </div>
+        </div>
+        <div class="dev-set__phone">
+          <div class="dev-phone">
+            <div class="dev-phone__frame">
+              <span class="dev-phone__island"></span>
+              <div class="dev-screen dev-screen--phone">
+                <div class="mk mk--phone">
+                  <div class="mk__top"><p class="mk__h">作業詳細</p></div>
+                  <div class="mk__detail">
+                    <p class="mk__detail-name">山田様</p>
+                    <dl>
+                      <div><dt>サービス</dt><dd>キッチン清掃</dd></div>
+                      <div><dt>日時</dt><dd>今日 10:00</dd></div>
+                      <div><dt>担当</dt><dd>山本</dd></div>
+                      <div><dt>状況</dt><dd><span class="mk-tag">作業中</span></dd></div>
+                    </dl>
+                  </div>
+                  <span class="mk__btn">作業完了を記録</span>
+                  <nav class="mk__tabbar"><span>ホーム</span><span>予定</span><span class="is-on">作業</span><span>予約</span><span>顧客</span></nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
     <article>
       <p class="n">03</p>
       <h2>売上と次回フォロー</h2>
-      <p>作業完了時に売上を記録。見積・請求・入金は案件に応じて管理し、周期を残すと次回推奨日ができるので、リピートの声かけまでつながります。</p>
+      <p>完了後に売上を残し、次回推奨日でリピートにつなげます。</p>
+      <div class="dev-set dev-set--tab flyer-dev flyer-dev--sm" aria-hidden="true">
+        <div class="dev-set__pc">
+          <div class="dev-monitor">
+            <div class="dev-monitor__frame">
+              <span class="dev-monitor__cam"></span>
+              <div class="dev-screen dev-screen--pc">
+                <div class="mk mk--pc">
+                  <aside class="mk__side">
+                    <span class="mk__logo"><img class="mk__logo__img" src="../images/brand-lumoalpha-wordmark.png" alt=""></span>
+                    <ul class="mk__nav"><li>ホーム</li><li>カレンダー</li><li>作業管理</li><li>予約管理</li><li class="is-on">顧客管理</li><li>リピート予定</li></ul>
+                  </aside>
+                  <div class="mk__main">
+                    <div class="mk__top"><p class="mk__h">山田様</p><span class="mk__sub">顧客詳細</span></div>
+                    <div class="mk__stats">
+                      <div class="mk__stat"><b>5回</b><span>利用回数</span></div>
+                      <div class="mk__stat"><b>3/12</b><span>最終利用</span></div>
+                      <div class="mk__stat"><b>山本</b><span>直近の担当</span></div>
+                    </div>
+                    <div class="mk__cols mk__cols--customer">
+                      <div class="mk__panel">
+                        <p class="mk__panel-h">利用履歴</p>
+                        <div class="mk__table mk__table--customer">
+                          <div class="mk__tr mk__tr--head"><span>訪問日</span><span>作業内容</span><span>担当</span><span>メモ</span></div>
+                          <div class="mk__tr"><span>3/12</span><span>エアコン</span><span>山本</span><span>午前希望</span></div>
+                          <div class="mk__tr"><span>11/8</span><span>キッチン</span><span>佐々木</span><span>駐車場</span></div>
+                        </div>
+                      </div>
+                      <div class="mk__panel">
+                        <p class="mk__panel-h">次回推奨日</p>
+                        <p class="mk__repeat-hint"><b>来月</b><span>エアコン清掃</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="dev-monitor__neck"></span>
+            <span class="dev-monitor__base"></span>
+          </div>
+        </div>
+        <div class="dev-set__phone">
+          <div class="dev-phone">
+            <div class="dev-phone__frame">
+              <span class="dev-phone__island"></span>
+              <div class="dev-screen dev-screen--phone">
+                <div class="mk mk--phone mk--repeat">
+                  <div class="mk__top"><p class="mk__h">リピート予定</p><span class="mk__sub">来月</span></div>
+                  <ul class="mk__repeat-list">
+                    <li class="mk__repeat-card">
+                      <div class="mk__repeat-head"><span class="mk__row-t">山田様</span><span class="mk-tag">未対応</span></div>
+                      <span class="mk__row-s">エアコン清掃</span>
+                    </li>
+                    <li class="mk__repeat-card">
+                      <div class="mk__repeat-head"><span class="mk__row-t">小林様</span><span class="mk-tag mk-tag--ok">営業済み</span></div>
+                      <span class="mk__row-s">キッチン清掃</span>
+                    </li>
+                  </ul>
+                  <nav class="mk__tabbar"><span>ホーム</span><span>予定</span><span>作業</span><span>予約</span><span>顧客</span></nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
   </section>
 
   <footer class="flyer__foot">
     <div class="flyer__cta">
-      <p class="flyer__cta-kicker">画面の流れは、LPでそのまま確認できます</p>
       <p class="flyer__cta-title">予約 → 受付・割当 → 作業 → 売上 → 次回フォロー</p>
       <p class="flyer__url">lumoalpha.jp/lp</p>
     </div>
