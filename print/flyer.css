@@ -102,9 +102,13 @@
 }
 .flyer-dev,
 .flyer-dev .dev-monitor,
-.flyer-dev .dev-phone,
-.flyer-dev .dev-screen{
+.flyer-dev .dev-phone{
   container-type:unset;
+}
+.flyer-dev .dev-screen{
+  container-type:inline-size;
+  overflow:hidden;
+  background:#f5f8fc;
 }
 .flyer-dev .dev-set__pc{ width:84%; }
 .flyer-dev .dev-set__phone{
@@ -163,9 +167,87 @@
   aspect-ratio:9 / 19.5;
   border-radius:3.6mm;
 }
-.flyer-dev .mk--pc{ font-size:6.8px; }
-.flyer-dev .mk--phone{ font-size:5.6px; padding-top:4.6mm; }
-.flyer-dev .mk__table .mk-tag{ font-size:0.85em; padding:0.12em 0.45em; }
+.flyer-dev .mk{
+  background:#f5f8fc;
+  color:#2c3338;
+  font-family:"Noto Sans JP", sans-serif;
+}
+.flyer-dev .mk--pc{
+  flex-direction:column;
+  font-size:clamp(9px, 3.5cqw, 15px);
+  gap:0;
+}
+.flyer-dev .mk--phone{
+  font-size:clamp(8px, 9.2cqw, 14px);
+  padding-top:3.2em;
+  color:#2c3338;
+}
+.flyer-dev .mk__bar{
+  display:flex;
+  align-items:center;
+  gap:.55em;
+  padding:.5em .75em;
+  background:#fff;
+  border-bottom:1px solid #dde5ef;
+}
+.flyer-dev .mk__bar .mk__logo__img{ height:1.15em; }
+.flyer-dev .mk__bar .mk__h{
+  margin:0;
+  font-size:1.02em;
+  font-weight:800;
+  color:#244e7c;
+}
+.flyer-dev .mk__body{
+  display:flex;
+  flex-direction:column;
+  gap:.4em;
+  min-height:0;
+  padding:.5em .65em .65em;
+}
+.flyer-dev .mk__chips span{
+  background:#fff;
+  border-color:#dde5ef;
+  color:#6f8ba5;
+}
+.flyer-dev .mk__chips span.is-on,
+.flyer-dev .mk__btn,
+.flyer-dev .mk__phase .is-now{
+  background:#2f73c7;
+  border-color:#2f73c7;
+  color:#fff;
+}
+.flyer-dev .mk__row{
+  background:#fff;
+  border:1px solid #dde5ef;
+}
+.flyer-dev .mk__row.is-sel{
+  background:#eaf3fc;
+  border-color:#c5daf3;
+}
+.flyer-dev .mk__row-t{ color:#2c3338; }
+.flyer-dev .mk__row-s,
+.flyer-dev .mk__stat span,
+.flyer-dev .mk__panel-h{ color:#6f8ba5; }
+.flyer-dev .mk__stat{
+  background:#fff;
+  border-color:#dde5ef;
+}
+.flyer-dev .mk__stat b{ color:#244e7c; }
+.flyer-dev .mk-tag{
+  background:#eaf3fc;
+  color:#2f73c7;
+}
+.flyer-dev .mk-tag--ok{ background:#e7f6ee; color:#1d6a4d; }
+.flyer-dev .mk-tag--warn{ background:#fdf3e3; color:#8a5a10; }
+.flyer-dev .mk__tabbar{ border-top-color:#dde5ef; }
+.flyer-dev .mk__tabbar span{ color:#6f8ba5; }
+.flyer-dev .mk__tabbar span.is-on{ color:#2f73c7; }
+.flyer-dev .mk__detail,
+.flyer-dev .mk__repeat-card,
+.flyer-dev .mk__card{
+  background:#fff;
+  border-color:#dde5ef;
+}
 .flyer__cap{
   display:flex;
   justify-content:space-between;
@@ -180,46 +262,28 @@
   margin:2mm 0 0;
   padding-bottom:1mm;
 }
-.flyer-dev--sm .dev-set__pc{ width:88%; }
-.flyer-dev--sm .dev-set__phone{
-  width:34%;
-  right:-4%;
-  bottom:8mm;
-}
+.flyer-dev--sm .dev-set__pc{ width:100%; }
+.flyer-dev--sm .dev-set__phone{ display:none; }
 .flyer-dev--sm .flyer-stand{
   width:42%;
   height:7mm;
 }
-.flyer-dev--sm .mk--pc{ font-size:5.4px; }
-.flyer-dev--sm .mk--phone{ font-size:5px; padding-top:5mm; }
+.flyer-dev--sm .mk--pc{ font-size:clamp(8px, 4.6cqw, 13px); }
+.flyer-dev--sm .mk--phone{ font-size:clamp(7.5px, 10cqw, 13px); padding-top:2.8em; }
 .flyer-dev .mk,
 .flyer-dev .mk *{
   word-break:keep-all !important;
   overflow-wrap:normal !important;
   line-break:strict;
 }
-.flyer-dev .mk__h,
-.flyer-dev .mk__panel-h,
-.flyer-dev .mk__sub,
-.flyer-dev .mk-tag,
-.flyer-dev .mk__stat span,
 .flyer-dev .mk__row-t,
 .flyer-dev .mk__row-s,
-.flyer-dev .mk__nav li,
-.flyer-dev .mk__chips span,
-.flyer-dev .mk__phase span{
+.flyer-dev .mk__h,
+.flyer-dev .mk-tag,
+.flyer-dev .mk__stat span,
+.flyer-dev .mk__tabbar span{
   white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
 }
-.flyer-dev .mk__tr{
-  grid-template-columns:1.05fr 1.35fr 1.05fr 1.1fr;
-}
-.flyer-dev .mk__tr > span:nth-child(3){ display:none; }
-.flyer-dev--sm .mk__table--customer .mk__tr > span:nth-child(4){ display:none; }
-.flyer-dev--sm .mk__side{ display:none; }
-.flyer-dev--sm .mk__cols{ grid-template-columns:1fr; }
-.flyer-dev--sm .mk__cols .mk__panel + .mk__panel{ display:none; }
 
 .flyer__flow{
   list-style:none;
@@ -366,11 +430,8 @@
     right:0 !important;
     bottom:11mm !important;
   }
-  .flyer-dev--sm .dev-set__phone{
-    width:34% !important;
-    right:-4% !important;
-    bottom:8mm !important;
-  }
+  .flyer-dev--sm .dev-set__pc{ width:100% !important; }
+  .flyer-dev--sm .dev-set__phone{ display:none !important; }
   .flyer-dev .dev-monitor__frame,
   .flyer-dev .dev-phone__frame,
   .flyer-stand,

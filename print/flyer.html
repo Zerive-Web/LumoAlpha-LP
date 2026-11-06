@@ -34,23 +34,18 @@
             <div class="dev-monitor__frame">
               <span class="dev-monitor__cam"></span>
               <div class="dev-screen dev-screen--pc">
-                <div class="mk mk--pc" aria-hidden="true">
-                  <aside class="mk__side">
-                    <span class="mk__logo"><img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt=""></span>
-                    <ul class="mk__nav"><li>ホーム</li><li>カレンダー</li><li>作業管理</li><li class="is-on">予約管理</li><li>顧客管理</li><li>リピート予定</li></ul>
-                  </aside>
-                  <div class="mk__main">
-                    <div class="mk__top"><p class="mk__h">予約管理</p><span class="mk__chips"><span class="is-on">すべて</span><span>確認</span><span>確定</span></span></div>
-                    <div class="mk__table">
-                      <div class="mk__tr mk__tr--head"><span>お客様</span><span>サービス</span><span>入口</span><span>日時</span><span>状況</span></div>
-                      <div class="mk__tr"><span>高橋様</span><span>エアコン</span><span>Web</span><span>明日 10:00</span><span><i class="mk-tag mk-tag--warn">新着</i></span></div>
-                      <div class="mk__tr"><span>伊藤様</span><span>浴室</span><span>電話</span><span>明日 13:00</span><span><i class="mk-tag mk-tag--muted">確認</i></span></div>
-                      <div class="mk__tr is-sel"><span>山田様</span><span>キッチン</span><span>Web</span><span>今日 10:00</span><span><i class="mk-tag">作業中</i></span></div>
-                      <div class="mk__tr"><span>小林様</span><span>エアコン</span><span>電話</span><span>今日 14:00</span><span><i class="mk-tag mk-tag--ok">確定</i></span></div>
-                    </div>
-                    <div class="mk__phase">
-                      <span class="is-done">受付</span><span class="is-done">確認</span><span class="is-done">予約確定</span><span class="is-now">作業</span><span>売上</span>
-                    </div>
+                <div class="mk mk--pc mk--app" aria-hidden="true">
+                  <div class="mk__bar">
+                    <img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt="">
+                    <p class="mk__h">予約管理</p>
+                  </div>
+                  <div class="mk__body">
+                    <div class="mk__chips"><span class="is-on">すべて</span><span>確定</span></div>
+                    <ul class="mk__list">
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン · 明日 10:00</span></span><i class="mk-tag mk-tag--warn">新着</i></li>
+                      <li class="mk__row is-sel"><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">キッチン · 今日 10:00</span></span><i class="mk-tag">作業中</i></li>
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">小林様</span><span class="mk__row-s">エアコン · 今日 14:00</span></span><i class="mk-tag mk-tag--ok">確定</i></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -70,12 +65,10 @@
                   <div class="mk__top"><p class="mk__h">Web予約</p></div>
                   <p class="mk__panel-h">エアコン清掃</p>
                   <div class="mk__assign-fields">
-                    <div><span>希望日</span><b>4/18（土）10:00</b></div>
+                    <div><span>希望日</span><b>4/18 10:00</b></div>
                     <div><span>お名前</span><b>高橋</b></div>
-                    <div><span>入口</span><b>公式HP</b></div>
                   </div>
                   <span class="mk__btn">予約を送信</span>
-                  <nav class="mk__tabbar"><span>予約</span><span>内容</span><span class="is-on">送信</span></nav>
                 </div>
               </div>
             </div>
@@ -105,33 +98,20 @@
             <div class="dev-monitor__frame">
               <span class="dev-monitor__cam"></span>
               <div class="dev-screen dev-screen--pc">
-                <div class="mk mk--pc">
-                  <aside class="mk__side">
-                    <span class="mk__logo"><img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt=""></span>
-                    <ul class="mk__nav"><li class="is-on">ホーム</li><li>カレンダー</li><li>作業管理</li><li>予約管理</li><li>顧客管理</li><li>リピート予定</li></ul>
-                  </aside>
-                  <div class="mk__main">
-                    <div class="mk__top"><p class="mk__h">ホーム</p></div>
+                <div class="mk mk--pc mk--app">
+                  <div class="mk__bar">
+                    <img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt="">
+                    <p class="mk__h">ホーム</p>
+                  </div>
+                  <div class="mk__body">
                     <div class="mk__stats">
                       <div class="mk__stat"><b>2</b><span>タスク</span></div>
                       <div class="mk__stat"><b>1</b><span>新着</span></div>
-                      <div class="mk__stat mk__stat--warn"><b>1</b><span>期限</span></div>
                     </div>
-                    <div class="mk__cols">
-                      <div class="mk__panel">
-                        <p class="mk__panel-h">タスク</p>
-                        <ul class="mk__list">
-                          <li class="mk__row"><span class="mk-tag">新着</span><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン</span></span></li>
-                          <li class="mk__row"><span class="mk-tag mk-tag--warn">期限</span><span class="mk__row-main"><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もり</span></span></li>
-                        </ul>
-                      </div>
-                      <div class="mk__panel">
-                        <p class="mk__panel-h">今日の作業</p>
-                        <ul class="mk__list">
-                          <li class="mk__row mk__row--time"><span class="mk__time">10:00</span><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">キッチン清掃</span></span></li>
-                        </ul>
-                      </div>
-                    </div>
+                    <ul class="mk__list">
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン</span></span><i class="mk-tag">新着</i></li>
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">10:00 キッチン</span></span><i class="mk-tag mk-tag--ok">本日</i></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -153,7 +133,7 @@
                     <li class="mk__card"><span class="mk-tag">新着</span><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン</span></li>
                     <li class="mk__card"><span class="mk-tag mk-tag--warn">期限</span><span class="mk__row-t">中村様</span><span class="mk__row-s">見積もり</span></li>
                   </ul>
-                  <nav class="mk__tabbar"><span class="is-on">ホーム</span><span>予定</span><span>作業</span><span>予約</span><span>顧客</span></nav>
+                  <nav class="mk__tabbar"><span class="is-on">ホーム</span><span>予定</span><span>予約</span><span>作業</span></nav>
                 </div>
               </div>
             </div>
@@ -171,20 +151,17 @@
             <div class="dev-monitor__frame">
               <span class="dev-monitor__cam"></span>
               <div class="dev-screen dev-screen--pc">
-                <div class="mk mk--pc">
-                  <aside class="mk__side">
-                    <span class="mk__logo"><img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt=""></span>
-                    <ul class="mk__nav"><li>ホーム</li><li>カレンダー</li><li>作業管理</li><li class="is-on">予約管理</li><li>顧客管理</li><li>リピート予定</li></ul>
-                  </aside>
-                  <div class="mk__main">
-                    <div class="mk__top"><p class="mk__h">予約管理</p><span class="mk__chips"><span class="is-on">すべて</span><span>確認</span><span>確定</span></span></div>
-                    <div class="mk__table">
-                      <div class="mk__tr mk__tr--head"><span>お客様</span><span>サービス</span><span>入口</span><span>日時</span><span>状況</span></div>
-                      <div class="mk__tr"><span>高橋様</span><span>エアコン</span><span>Web</span><span>明日 10:00</span><span><i class="mk-tag mk-tag--warn">新着</i></span></div>
-                      <div class="mk__tr is-sel"><span>山田様</span><span>キッチン</span><span>Web</span><span>今日 10:00</span><span><i class="mk-tag">作業中</i></span></div>
-                      <div class="mk__tr"><span>小林様</span><span>エアコン</span><span>電話</span><span>今日 14:00</span><span><i class="mk-tag mk-tag--ok">確定</i></span></div>
-                    </div>
-                    <div class="mk__phase"><span class="is-done">受付</span><span class="is-done">確認</span><span class="is-now">作業</span><span>売上</span></div>
+                <div class="mk mk--pc mk--app">
+                  <div class="mk__bar">
+                    <img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt="">
+                    <p class="mk__h">予約管理</p>
+                  </div>
+                  <div class="mk__body">
+                    <ul class="mk__list">
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">高橋様</span><span class="mk__row-s">エアコン · 明日</span></span><i class="mk-tag mk-tag--warn">新着</i></li>
+                      <li class="mk__row is-sel"><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">キッチン · 今日</span></span><i class="mk-tag">作業中</i></li>
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">小林様</span><span class="mk__row-s">エアコン · 今日</span></span><i class="mk-tag mk-tag--ok">確定</i></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -212,7 +189,7 @@
                     </dl>
                   </div>
                   <span class="mk__btn">完了</span>
-                  <nav class="mk__tabbar"><span>ホーム</span><span>予定</span><span class="is-on">作業</span><span>予約</span><span>顧客</span></nav>
+                  <nav class="mk__tabbar"><span>ホーム</span><span>予定</span><span>予約</span><span class="is-on">作業</span></nav>
                 </div>
               </div>
             </div>
@@ -230,27 +207,20 @@
             <div class="dev-monitor__frame">
               <span class="dev-monitor__cam"></span>
               <div class="dev-screen dev-screen--pc">
-                <div class="mk mk--pc">
-                  <aside class="mk__side">
-                    <span class="mk__logo"><img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt=""></span>
-                    <ul class="mk__nav"><li>ホーム</li><li>カレンダー</li><li>作業管理</li><li>予約管理</li><li class="is-on">顧客管理</li><li>リピート予定</li></ul>
-                  </aside>
-                  <div class="mk__main">
-                    <div class="mk__top"><p class="mk__h">山田様</p><span class="mk__sub">顧客詳細</span></div>
+                <div class="mk mk--pc mk--app">
+                  <div class="mk__bar">
+                    <img class="mk__logo__img" src="brand-lumoalpha-wordmark.png" alt="">
+                    <p class="mk__h">売上管理</p>
+                  </div>
+                  <div class="mk__body">
                     <div class="mk__stats">
-                      <div class="mk__stat"><b>5回</b><span>利用回数</span></div>
-                      <div class="mk__stat"><b>3/12</b><span>最終利用</span></div>
-                      <div class="mk__stat"><b>山本</b><span>直近の担当</span></div>
+                      <div class="mk__stat"><b>12万</b><span>今月</span></div>
+                      <div class="mk__stat"><b>5件</b><span>完了</span></div>
                     </div>
-                    <div class="mk__cols">
-                      <div class="mk__panel">
-                        <p class="mk__panel-h">利用履歴</p>
-                        <ul class="mk__list">
-                          <li class="mk__row"><span class="mk-tag">3/12</span><span class="mk__row-main"><span class="mk__row-t">エアコン</span><span class="mk__row-s">山本</span></span></li>
-                          <li class="mk__row"><span class="mk-tag">11/8</span><span class="mk__row-main"><span class="mk__row-t">キッチン</span><span class="mk__row-s">佐々木</span></span></li>
-                        </ul>
-                      </div>
-                    </div>
+                    <ul class="mk__list">
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">山田様</span><span class="mk__row-s">エアコン · 3/12</span></span><i class="mk-tag mk-tag--ok">入金</i></li>
+                      <li class="mk__row"><span class="mk__row-main"><span class="mk__row-t">小林様</span><span class="mk__row-s">次回 6月</span></span><i class="mk-tag">予定</i></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -278,7 +248,7 @@
                       <span class="mk__row-s">キッチン</span>
                     </li>
                   </ul>
-                  <nav class="mk__tabbar"><span>ホーム</span><span>予定</span><span>作業</span><span>予約</span><span>顧客</span></nav>
+                  <nav class="mk__tabbar"><span>ホーム</span><span class="is-on">予定</span><span>予約</span><span>作業</span></nav>
                 </div>
               </div>
             </div>
