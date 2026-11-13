@@ -392,10 +392,9 @@ h1,h2,h3,p{ margin:0; }
 .brand-logo__img{
   display:block;
   width:auto;
-  height:46px;
-  max-width:min(221px, 54vw);
+  height:42px;
+  max-width:min(210px, 54vw);
   object-fit:contain;
-  filter: drop-shadow(0 2px 8px rgba(30,120,220,.28));
 }
 .site-nav:not(.is-light) .site-nav__brand{ color:#fff; }
 .site-nav:not(.is-light) .site-nav__cta{
@@ -1666,10 +1665,10 @@ h1,h2,h3,p{ margin:0; }
 .site-footer__brand{
   display:block;
   width:auto;
-  height:28px;
-  max-width:min(168px, 70vw);
+  height:30px;
+  max-width:min(176px, 70vw);
   margin:0 auto .65rem;
-  opacity:.9;
+  opacity:1;
   object-fit:contain;
 }
 
